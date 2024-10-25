@@ -24,10 +24,33 @@
   }
 
   .modal{
+    position: relative;
     width: min(540px, 92vw);
     height: 330px;
     border-radius: 16px;
     background-color: var(--dark-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button{
+    position: absolute;
+    width: 60px; height: 60px;
+    border-radius: 100%;
+    background-color: var(--neon-green);
+    bottom: 0px;
+    transform: translateY(50%);
+    cursor: pointer;
+    transition: all 0.05s ease;
+    display: grid;
+    place-items: center;
+  }
+
+  .button:hover{
+    box-shadow: 0px 0px 40px 0px var(--neon-green);
+    transition: all 0.05s ease;
   }
   
   @media (max-width: 375px) {
