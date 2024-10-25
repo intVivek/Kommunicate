@@ -11,16 +11,38 @@
     font-family: "Manrope", sans-serif;
     margin: 0; padding: 0;
   }
-  
-  .quote {
-    font-size: 28px;
-  }
 
   .background{
     width: 100vw; height: 100vh;
     background-color: var(--dark-blue);
     display: grid;
     place-items: center;
+  }
+
+  .quote {
+    width: 80%;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+  }
+
+  .divider{
+    margin-top: 5px;
+    width: 80%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    margin-top: auto;
+    margin-bottom: 70px;
+  }
+
+  .divider-window{
+    width: 0px;
+  }
+
+  .divider-window svg{
+    transform: translateX(-50%);
   }
 
   .modal{
@@ -30,9 +52,16 @@
     border-radius: 16px;
     background-color: var(--dark-grayish-blue);
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .advice-number{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--neon-green);
+    letter-spacing: 4px;
+    margin-top: 45px;
   }
 
   .button{
@@ -53,7 +82,14 @@
     transition: all 0.05s ease;
   }
   
-  @media (max-width: 375px) {
+  @media (max-width: 475px) {
+    .quote{
+        font-size: 24px;
+    }
+
+    .divider{
+        margin-bottom: 65px;
+    }
   }
   
   @media (min-width: 1440px) {
