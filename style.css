@@ -7,12 +7,27 @@
     --dark-blue: hsl(218, 23%, 16%);
   }
   
-  body {
+  html, body {
     font-family: "Manrope", sans-serif;
+    margin: 0; padding: 0;
   }
   
   .quote {
     font-size: 28px;
+  }
+
+  .background{
+    width: 100vw; height: 100vh;
+    background-color: var(--dark-blue);
+    display: grid;
+    place-items: center;
+  }
+
+  .modal{
+    width: min(540px, 92vw);
+    height: 330px;
+    border-radius: 16px;
+    background-color: var(--dark-grayish-blue);
   }
   
   @media (max-width: 375px) {
